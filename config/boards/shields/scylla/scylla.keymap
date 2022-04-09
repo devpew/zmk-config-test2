@@ -26,10 +26,11 @@
    &kp TAB   &kp Q    &kp W    &kp F  &kp P    &kp G                                         &kp J     &kp L  &kp U     &kp Y    &kp ;    &kp GRAVE
    &kp LSHFT &kp A    &kp R    &kp S  &kp T    &kp D                                         &kp H     &kp N  &kp E     &kp I    &kp O    &kp SQT
    &kp LSHFT &kp Z    &kp X    &kp C  &kp V    &kp B                                         &kp K     &kp M  &kp COMMA &kp DOT  &kp FSLH &kp KP_MINUS
-   &kp LCTRL &kp LALT &kp LGUI &kp SPACE &kp BKSP                                                      &kp SPACE  &kp RET   &kp SPACE    &kp DEL  &kp RSHFT
+   &kp LCTRL &kp LALT &kp LGUI &kp SPACE &kp BKSP                                              &kp SPACE  &kp RET   &kp SPACE    &kp DEL  &kp RSHFT
             >;
 
         };
         
+    };
 
 };
