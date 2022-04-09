@@ -12,7 +12,7 @@ endif
 if SHIELD_SCYLLA_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "Scylla R"
+    default "Scylla_R"
 
 endif
 
