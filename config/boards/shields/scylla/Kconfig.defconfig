@@ -8,6 +8,15 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
+
+if SHIELD_SCYLLA_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Scylla R"
+
+endif
+
+
 if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT
 
 config ZMK_SPLIT
