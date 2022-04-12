@@ -45,7 +45,7 @@
    &kp TAB      &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp GRAVE
    &kp LSHFT    &kp A       &kp R       &kp S       &kp T       &kp D           &kp H       &kp N       &kp E       &kp I       &kp O       &kp SQT
    &tdq         &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp MINUS
-   &kp LCTRL    &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp RET     &kp SPACE  &kp DEL     &kp RSHIFT  &mo L1
+   &kp LCTRL    &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp RET     &kp SPACE   &kp DEL     &kp RSHIFT  &mo L1
             >;                               
 
         };
