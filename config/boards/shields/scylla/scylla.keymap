@@ -19,6 +19,17 @@
 #define NONE 0
 
 / {
+
+    behaviors {
+        tdq: tap_dance_qwerty {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_QWERTY";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo L2>, <&tog QWERTY>;
+        };
+    };
+
     keymap {
         compatible =  "zmk,keymap" ;
 
@@ -34,7 +45,7 @@
    &kp TAB      &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp GRAVE
    &kp LSHFT    &kp A       &kp R       &kp S       &kp T       &kp D           &kp H       &kp N       &kp E       &kp I       &kp O       &kp SQT
    &kp LSHFT    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp MINUS
-   &mo L2       &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp N1      &kp RET     &kp SPACE   &kp RSHIFT  &kp DEL
+   &tdq         &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp N1      &kp RET     &kp SPACE   &kp RSHIFT  &kp DEL
             >;                               
 
         };
@@ -84,7 +95,7 @@
    &kp TAB      &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp GRAVE
    &kp LSHFT    &kp A       &kp R       &kp S       &kp T       &kp D           &kp H       &kp N       &kp E       &kp I       &kp O       &kp SQT
    &kp LSHFT    &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp MINUS
-   &mo L2       &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp N1      &kp RET     &kp SPACE   &kp RSHIFT  &kp DEL
+   &tdq         &kp LALT    &kp LGUI    &kp SPACE   &kp BSPC                                &kp N1      &kp RET     &kp SPACE   &kp RSHIFT  &kp DEL
             >;                               
 
         };
