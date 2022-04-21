@@ -35,7 +35,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;    
             quick-tap-ms = <300>;
-            bindings = <&bt BT_CLR>, <&bt BT_SEL 0>;
+            bindings = <&bt BT_CLR &bt BT_SEL 0>;
         };
         bt1: bluetooth_1 {
             compatible = "zmk,behavior-hold-tap";
@@ -44,7 +44,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;    
             quick-tap-ms = <300>;
-            bindings = <&bt BT_CLR>, <&bt BT_SEL 1>;
+            bindings = <&bt BT_CLR &bt BT_SEL 1>;
         };
         bt2: bluetooth_2 {
             compatible = "zmk,behavior-hold-tap";
@@ -53,7 +53,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;    
             quick-tap-ms = <300>;
-            bindings = <&bt BT_CLR>, <&bt BT_SEL 2>;
+            bindings = <&bt BT_CLR &bt BT_SEL 2>;
         };
         bt3: bluetooth_3 {
             compatible = "zmk,behavior-hold-tap";
@@ -62,7 +62,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;    
             quick-tap-ms = <300>;
-            bindings = <&bt BT_CLR>, <&bt BT_SEL 3>;
+            bindings = <&bt BT_CLR &bt BT_SEL 3>;
         };
     };
 
