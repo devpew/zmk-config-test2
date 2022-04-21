@@ -25,8 +25,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_QWERTY";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo KEYPAD>, <&tog QWERTY>;
+            tapping-term-ms = <300>;
+            bindings = <&mo KEYPAD>, <&mo KEYPAD>, <&tog QWERTY>;
         };
     };
 
@@ -44,8 +44,8 @@
    &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
    &kp TAB      &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp GRAVE
    &kp BSPC     &kp A       &kp R       &kp S       &kp T       &kp D           &kp H       &kp N       &kp E       &kp I       &kp O       &kp SQT
-   &tdq         &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp MINUS
-   &kp LGUI     &kp LALT    &kp LCTRL   &kp LSHIFT  &kp SPACE                               &kp SPACE   &kp RSHIFT  &kp DEL     &kp RET     &mo KEYPAD
+   &kp LSHIFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp MINUS
+   &tdq kp      &kp LALT    &kp LCTRL   &tdkp LGUI  &kp SPACE                               &kp SPACE   &kp RSHIFT  &kp DEL     &kp RET     &mo KEYPAD
             >;                               
 
         };
@@ -69,17 +69,17 @@
         
         keypad_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
-// |        |   F1      |   F2      |   F3      |   F4      |  F5   |  ---  |   F6      |   F7      |   F8      |   [       |   ]       |           |
-// |        |   HOME    |   ^       |   END     |           |       |  ---  |   \       |   7       |   8       |   9       |   -       |           |
-// | BT_NXT |   <-      |   v       |   ->      |           |       |  ---  |   *       |   4       |   5       |   6       |   +       |           |
-// |        |           |           |           |           |       |  ---  |   0       |   1       |   2       |   3       |   \       |           |
-// |        |           |           |           |           |          ---              |           |           |           |           |           |
+// | BT_SEL         |   F1      |   F2      |   F3      |   F4      |  F5   |  ---  |   F6      |   F7      |   F8      |   [       |   ]       |           |
+// | BT_SEL         |   HOME    |   ^       |   END     |           |       |  ---  |   \       |   7       |   8       |   9       |   -       |           |
+// | BT_SEL         |   <-      |   v       |   ->      |           |       |  ---  |   *       |   4       |   5       |   6       |   +       |           |
+// | BT_SEL         |           |           |           |           |       |  ---  |   0       |   1       |   2       |   3       |   \       |           |
+// |                |           |           |           |           |          ---              |           |           |           |           |           |
             bindings = <
-   &trans   &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6          &kp F7      &kp F8      &kp LBKT    &kp RBKT    &trans
-   &trans   &kp HOME    &kp UP      &kp END     &trans      &trans          &kp KP_DIVIDE   &kp N7      &kp N8      &kp N9     &kp KP_MINUS &trans
- &bt BT_NXT &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &trans          &kp KP_MULTIPLY &kp N4      &kp N5      &kp N6      &kp KP_PLUS &trans
-   &trans   &trans      &trans      &trans      &trans      &trans          &kp N0          &kp N1      &kp N2      &kp N3      &kp BSLH    &trans
-   &trans   &trans      &trans      &trans      &trans                                      &trans      &trans      &trans      &trans      &trans
+&mt BT_CLR BT_SEL 0 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6          &kp F7      &kp F8      &kp LBKT    &kp RBKT    &trans
+&mt BT_CLR BT_SEL 1 &kp HOME    &kp UP      &kp END     &trans      &trans          &kp KP_DIVIDE   &kp N7      &kp N8      &kp N9     &kp KP_MINUS &trans
+&mt BT_CLR BT_SEL 2 &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &trans          &kp KP_MULTIPLY &kp N4      &kp N5      &kp N6      &kp KP_PLUS &trans
+&mt BT_CLR BT_SEL 3 &trans      &trans      &trans      &trans      &trans          &kp N0          &kp N1      &kp N2      &kp N3      &kp BSLH    &trans
+&trans              &trans      &trans      &trans      &trans                                      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
