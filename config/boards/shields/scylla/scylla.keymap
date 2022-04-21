@@ -28,7 +28,7 @@
             tapping-term-ms = <300>;
             bindings = <&mo KEYPAD>, <&mo KEYPAD>, <&tog QWERTY>;
         };
-        pht: bt0 {
+        bt0: bluetooth_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
@@ -37,7 +37,7 @@
             quick-tap-ms = <300>;
             bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
         };
-        pht: bt1 {
+        bt1: bluetooth_1 {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
@@ -46,7 +46,7 @@
             quick-tap-ms = <300>;
             bindings = <&bt BT_SEL 1>, <&bt BT_CLR>;
         };
-        pht: bt2 {
+        bt2: bluetooth_2 {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
@@ -55,7 +55,7 @@
             quick-tap-ms = <300>;
             bindings = <&bt BT_SEL 2>, <&bt BT_CLR>;
         };
-        pht: bt3 {
+        bt3: bluetooth_3 {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
