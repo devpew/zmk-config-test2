@@ -35,7 +35,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;    
             quick-tap-ms = <300>;
-            bindings = <&bt>, <&trans>;
+            bindings = <&bt &trans>;
         };
     };
 
