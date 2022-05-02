@@ -44,7 +44,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
-
+aprgaprgapr;ggaprgggqwt;qwt
     keymap {
         compatible =  "zmk,keymap" ;
 
@@ -54,7 +54,7 @@
 // | TAB    |   Q       |   W       |   F       |   P       |  G    |  ---  |   J       |   L       |   U       |   Y       |   ;       |   `       |
 // | BKSP   |   A       |   R       |   S       |   T       |  D    |  ---  |   H       |   N       |   E       |   I       |   O       |   '       |
 // | CTRL   |   Z       |   X       |   C       |   V       |  B    |  ---  |   K       |   M       |   ,       |   .       |   /       |   -       |
-// | RAISE  |   LGUI    |   LSHIFT  |   LALT    |   LCTRL   |          ---              |   ENTER   |   DEL     |   RSHIFT  |   SPACE     |   RAISE   |
+// | RAISE  |   LGUI    |   LSHIFT  |   LALT    |   LCTRL   |          ---              |   ENTER   |   DEL     |   RSHIFT  |   SPACE   |   RAISE   |
             bindings = <
    &kp ESC      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
    &tabtil      &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp GRAVE
@@ -100,22 +100,22 @@
         };
 
 
-//    qwerty_layer {
+    qwerty_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
 // |        |           |           |           |           |       |  ---  |           |           |           |           |           |           |
 // |        |   Q       |   W       |   E       |   R       |  T    |  ---  |   Y       |   U       |   I       |   O       |   P       |           |
 // |        |   A       |   S       |   D       |   F       |  G    |  ---  |   H       |   J       |   K       |   L       |   ;       |           |
 // |        |   Z       |   X       |   C       |   V       |  B    |  ---  |   N       |   M       |           |           |           |           |
 // |        |           |           |           |           |          ---              |           |           |           |           |           |
-//            bindings = <
-//   &trans       &trans      &trans      &trans      &trans      &trans          &kp N6      &trans      &trans      &trans      &trans      &trans
-//   &trans       &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &trans
-//   &trans       &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &trans
-//   &trans       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &trans      &trans      &trans      &trans
-//   &trans       &trans      &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans
-//            >;
-//
-//        };
+            bindings = <
+   &trans       &trans      &trans      &trans      &trans      &trans          &kp N6      &trans      &trans      &trans      &trans      &trans
+   &trans       &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &trans
+   &trans       &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &trans
+   &trans       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &trans      &trans      &trans      &trans
+   &trans       &trans      &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans
+            >;
+
+        };
 
     };
 
