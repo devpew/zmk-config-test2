@@ -21,13 +21,7 @@
 / {
 
     behaviors {
-        tdq: tap_dance_qwerty {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_QWERTY";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&mo KEYPAD>, <&mo KEYPAD>, <&tog QWERTY>;
-        };
+
         td_bt: tapdance_bluetooth_clear {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_BLUETOOTH_CLEAR";
