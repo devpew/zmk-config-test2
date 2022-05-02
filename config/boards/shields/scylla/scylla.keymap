@@ -42,10 +42,10 @@
             bindings = <&kp TAB>, <&kp GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-    }
+    };
 
     keymap {
-        compatible =  "zmk,keymap" ;
+        compatible =  "zmk,keymap";
 
         default_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
