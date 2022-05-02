@@ -44,7 +44,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
-aprgaprgapr;ggaprgggqwt;qwt
     keymap {
         compatible =  "zmk,keymap" ;
 
