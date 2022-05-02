@@ -12,9 +12,9 @@
 
 
 #define DEFAULT 0
-#define KEYPAD  1
-#define WASD    2
-#define QWERTY  3
+#define QWERTY  1
+#define KEYPAD  2
+#define WASD    3
 
 
 #define NONE 0
@@ -44,6 +44,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
+
     keymap {
         compatible =  "zmk,keymap" ;
 
@@ -65,6 +66,22 @@
 
         };
 
+    qwerty_layer {
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+// |        |           |           |           |           |       |  ---  |           |           |           |           |           |           |
+// |        |   Q       |   W       |   E       |   R       |  T    |  ---  |   Y       |   U       |   I       |   O       |   P       |           |
+// |        |   A       |   S       |   D       |   F       |  G    |  ---  |   H       |   J       |   K       |   L       |   ;       |           |
+// |        |   Z       |   X       |   C       |   V       |  B    |  ---  |   N       |   M       |           |           |           |           |
+// |        |           |           |           |           |          ---              |           |           |           |           |           |
+            bindings = <
+   &trans       &trans      &trans      &trans      &trans      &trans          &kp N6      &trans      &trans      &trans      &trans      &trans
+   &trans       &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &trans
+   &trans       &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &trans
+   &trans       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &trans      &trans      &trans      &trans
+   &trans       &trans      &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans
+            >;
+
+        };
 
         keypad_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -99,22 +116,7 @@
         };
 
 
-    qwerty_layer {
-// --------------------------------------------------------------------------------------------------------------------------------------------------
-// |        |           |           |           |           |       |  ---  |           |           |           |           |           |           |
-// |        |   Q       |   W       |   E       |   R       |  T    |  ---  |   Y       |   U       |   I       |   O       |   P       |           |
-// |        |   A       |   S       |   D       |   F       |  G    |  ---  |   H       |   J       |   K       |   L       |   ;       |           |
-// |        |   Z       |   X       |   C       |   V       |  B    |  ---  |   N       |   M       |           |           |           |           |
-// |        |           |           |           |           |          ---              |           |           |           |           |           |
-            bindings = <
-   &trans       &trans      &trans      &trans      &trans      &trans          &kp N6      &trans      &trans      &trans      &trans      &trans
-   &trans       &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P       &trans
-   &trans       &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI    &trans
-   &trans       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &trans      &trans      &trans      &trans
-   &trans       &trans      &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans
-            >;
 
-        };
 
     };
 
